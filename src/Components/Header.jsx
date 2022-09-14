@@ -9,6 +9,7 @@ function clicked() {
 
 function Header() {
   return (
+    <HeaderBackground>
     <HeaderBlock>
         <HeaderLogo src={logo}/>
         <HeaderNav>
@@ -24,12 +25,21 @@ function Header() {
             <BasketIcon src={basket}/>
         </BasketBtn>
     </HeaderBlock>
+    </HeaderBackground>
   )
 }
 
 export default Header
 
-const HeaderBlock = styled.section`
+const HeaderBackground = styled.section`
+    max-width: 2560px;
+    width: 100%;
+    background-color: #111111;
+    display: flex;
+    justify-content: center;
+`
+
+const HeaderBlock = styled.div`
     padding: 0;
     max-width: 1440px;
     width: 100%;
