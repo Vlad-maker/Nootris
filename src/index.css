@@ -1,0 +1,23 @@
+@import url('../src/vendor/fonts/Rubik/stylesheet.css');
+
+body {
+  margin: 0;
+  font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #646363;
+  color: #fff;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* div, h1, h2, h3, h4, p ,li, ul, img, section, article, main, header, nav, button { 
+    outline-width: 1px; 
+    outline-style: solid; 
+    outline-color: rgb(33, 216, 9); 
+} */
