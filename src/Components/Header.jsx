@@ -12,6 +12,7 @@ function Header() {
     <HeaderBackground>
     <HeaderBlock>
         <HeaderLogo src={logo}/>
+        
         <HeaderNav>
             <HeaderNavLink>FAQ</HeaderNavLink>
             <HeaderNavLink>Оплата и доставка</HeaderNavLink>
@@ -29,7 +30,7 @@ function Header() {
   )
 }
 
-export default Header
+export default Header;
 
 const HeaderBackground = styled.section`
     max-width: 2560px;
@@ -62,7 +63,7 @@ const HeaderBlock = styled.div`
     @media (min-width: 801px) and (max-width: 1366px) {
 
     }
-`;
+`
 
 const HeaderLogo = styled.img`
     width: 120px;
@@ -103,6 +104,7 @@ const BasketBtn = styled.button`
     margin-right: 80px;
     padding: 0;
 `
+
 const BasketIcon = styled.img`
     width: 100%;
     height: 100%

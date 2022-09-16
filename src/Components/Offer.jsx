@@ -1,5 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import ginger from '../images/ginger.svg';
+import virus from '../images/virus.svg';
+import nootris from '../images/nootris270.svg';
 
 function offer() {
     console.log('Offered!')
@@ -21,10 +24,36 @@ function Offer() {
             </OfferHeadingBlock>
 
             <OfferPriceBlock>
-
+                <OfferPriceOld>
+                    750&#8381;
+                </OfferPriceOld>
+                <OfferPriceNew>
+                    690&#8381;
+                </OfferPriceNew>
             </OfferPriceBlock>
 
             <OfferAdvertisingBlock>
+
+                <OfferAdvertisingSideBlock>
+                    <OfferAdvertisingSideImg src={ginger}/>
+                    <OfferAdvertisingSideCaption>
+                        Содержит<><br/></><span style={{color: '#FCB500'}}>имбирь</span>
+                    </OfferAdvertisingSideCaption>
+                </OfferAdvertisingSideBlock>
+
+                <OfferAdvertisingCenterBlock>
+                    <OfferAdvertisingCenterImg src={nootris}/>
+                    <OfferAdvertisingCenterCaption>
+                        + Бесплатная доставка <span style={{color: '#FCB500', fontSize: '24px', lineHeight: '28.44px'}}>Специальная цена</span>
+                    </OfferAdvertisingCenterCaption>
+                </OfferAdvertisingCenterBlock>
+
+                <OfferAdvertisingSideBlock>
+                    <OfferAdvertisingSideImg src={virus}/>
+                    <OfferAdvertisingSideCaption>
+                    Нейтрализует<><br/></><span style={{color: '#FCB500'}}>вирусы</span>
+                    </OfferAdvertisingSideCaption>
+                </OfferAdvertisingSideBlock>
 
             </OfferAdvertisingBlock>
 
@@ -35,7 +64,7 @@ function Offer() {
   )
 }
 
-export default Offer
+export default Offer;
 
 const OfferBackground = styled.section`
     max-width: 2560px;
@@ -53,6 +82,7 @@ const OfferBlock = styled.div`
     align-items: center;
     flex-direction: column;
 `
+
 const OfferHeadingBlock = styled.div`
     max-width: 1312px;
     width: 100%;
@@ -62,6 +92,7 @@ const OfferHeadingBlock = styled.div`
     flex-direction: column;
     align-items: center;
 `
+
 const OfferHeadingWhite = styled.h2`
     font-size: 48px;
     font-weight: 700;
@@ -69,7 +100,7 @@ const OfferHeadingWhite = styled.h2`
     margin: 0;
 `
 
-const OfferHeadingYellow = styled.h2`
+const OfferHeadingYellow = styled.p`
     font-size: 48px;
     font-weight: 700;
     line-height: 56.88px;
@@ -78,10 +109,36 @@ const OfferHeadingYellow = styled.h2`
 `
 
 const OfferPriceBlock = styled.div`
-    max-width: 272px;
+    max-width: 266px;
     width: 100%;
     height: 40px;
     margin: 85px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+`
+
+const OfferPriceOld = styled.p`
+    width: 112px;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 42.66px;
+    text-decoration: line-through;
+    color: #ADADAD;
+    margin: 0;
+    text-align: center;
+`
+
+const OfferPriceNew = styled.p`
+    width: 128px;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 56.88px;
+    color: #fff;
+    margin: 0;
+    display: flex;
+    align-self:center;
+    justify-self: center;
+
 `
 
 const OfferAdvertisingBlock = styled.div`
@@ -89,6 +146,61 @@ const OfferAdvertisingBlock = styled.div`
     width: 100%;
     min-height: 285px;
     margin: 59px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+`
+
+const OfferAdvertisingSideBlock = styled.div`
+    max-width: 193px;
+    width: 100%;
+    min-height: 285px;
+    margin:0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+`
+
+const OfferAdvertisingSideImg = styled.img`
+    width: 192px;
+    height: 165px;
+    object-fit: contain;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+`
+
+const OfferAdvertisingSideCaption = styled.p`
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.33px;
+    text-align: center;
+    margin: 0;
+`
+
+const OfferAdvertisingCenterBlock = styled.div`
+    max-width: 480px;
+    width: 100%;
+    min-height: 285px;
+    margin:0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+`
+
+const OfferAdvertisingCenterImg = styled.img`
+    max-width: 480px;
+    width: 100%;
+    height: 160px;
+    object-fit: contain;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+`
+
+const OfferAdvertisingCenterCaption = styled.p`
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 42.66px;
+    text-align: center;
+    margin: 0;
 `
 
 const OfferBtn = styled.button`

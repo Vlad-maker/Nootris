@@ -37,7 +37,7 @@ function UniqueSP() {
   )
 }
 
-export default UniqueSP
+export default UniqueSP;
 
 const UniqueSPBackground = styled.section`
     max-width: 2560px;
@@ -110,6 +110,7 @@ const GingerImg = styled.img`
     top: 275px;
     left: -170px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    object-fit: contain;
 `
 
 const NootrisImg = styled.img`
@@ -119,7 +120,8 @@ const NootrisImg = styled.img`
     top: 60px;
     left: 18px;
     z-index: 1;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));\
+    object-fit: contain;
 `
 
 const LemonImg = styled.img`
@@ -131,4 +133,5 @@ const LemonImg = styled.img`
     right: 230px;
     z-index: 2;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    object-fit: contain;
 `
