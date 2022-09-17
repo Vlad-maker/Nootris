@@ -1,7 +1,17 @@
 import React from 'react'
 import styled from 'styled-components';
+import './BMmenu.css'
 import logo from '../images/logo.svg';
 import basket from '../images/basket.svg';
+
+import { slide as Menu } from "react-burger-menu";
+
+const toggleMenu = ({ isOpen }) => {
+    const menuWrap = document.querySelector(".bm-menu-wrap");
+    isOpen
+      ? menuWrap.setAttribute("aria-hidden", false)
+      : menuWrap.setAttribute("aria-hidden", true);
+  };
 
 function clicked() {
     console.log('clicked')
@@ -25,6 +35,20 @@ function Header() {
         <BasketBtn type='button' onClick={clicked}>
             <BasketIcon src={basket}/>
         </BasketBtn>
+
+        <BMmenuWrapper>
+            <Menu right noOverlay disableOverlayClick onStateChange={toggleMenu}>
+                <HeaderNavBMmenu>
+                    <HeaderNavLink>FAQ</HeaderNavLink>
+                    <HeaderNavLink>Оплата и доставка</HeaderNavLink>
+                    <HeaderNavLink>Возврат</HeaderNavLink>
+                    <HeaderNavLink>Исследования</HeaderNavLink>
+                    <HeaderNavLink>Личный кабинет</HeaderNavLink>
+                    <HeaderNavLink>8 8 (800) 600-09-90</HeaderNavLink>
+                </HeaderNavBMmenu>
+            </Menu>
+        </BMmenuWrapper>
+
     </HeaderBlock>
     </HeaderBackground>
   )
@@ -69,6 +93,15 @@ const HeaderLogo = styled.img`
     width: 120px;
     height: 34.53px;
     margin-left: 64px;
+
+    @media (max-width: 1023px) {
+        margin-left: 24px;
+        height: 30px;
+    }
+
+    @media (min-width: 1024px) and (max-width: 1300px) {
+        margin-left: 24px;
+    }
 `
 
 const HeaderNav = styled.nav`
@@ -80,6 +113,21 @@ const HeaderNav = styled.nav`
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 1023px) {
+        display: none;
+    }
+
+    @media (min-width: 1024px) and (max-width: 1199px) {
+        max-width: 760px;
+    }
+
+    @media (min-width: 1200px) and (max-width: 1270px) {
+        max-width: 880px;
+    }
+    @media (min-width: 1271px) and (max-width: 1365px) {
+        max-width: 900px;
+    }
 `
 
 const HeaderNavLink = styled.div`
@@ -93,6 +141,14 @@ const HeaderNavLink = styled.div`
         color: #cbcbcb;
         transition: 0.2s;
     }
+
+    @media (max-width: 1023px) {
+        margin: 0 0 10px 0;
+    }
+
+    @media (min-width: 1024px) and (max-width: 1199px) {
+        font-size: 16px;
+    }
 `
 
 const BasketBtn = styled.button`
@@ -101,8 +157,18 @@ const BasketBtn = styled.button`
     border:none;
     background-color: transparent;
     cursor: pointer;
-    margin-right: 80px;
+    margin: 0 80px 0 0;
     padding: 0;
+
+    @media (max-width: 1023px) {
+        width: 30px;
+        height: 27px;
+        margin: 0 65px 0 auto;
+    }
+
+    @media (min-width: 1024px) and (max-width: 1300px) {
+        margin: 0 24px;
+    }
 `
 
 const BasketIcon = styled.img`
@@ -110,3 +176,19 @@ const BasketIcon = styled.img`
     height: 100%
 `
 
+const BMmenuWrapper = styled.div`
+    @media (min-width: 1024px) {
+        display: none;
+    }
+`
+
+const HeaderNavBMmenu = styled.nav`
+    max-width: 260px;
+    width: 100%;
+    margin: 10px 0 0 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+`
