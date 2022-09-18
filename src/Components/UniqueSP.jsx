@@ -62,7 +62,7 @@ const UniqueSPBlock = styled.div`
 
     @media (min-width: 375px) and (max-width: 424px) {
         max-width: 424px;
-        min-height: 323px;
+        min-height: 755px;
         max-height: 1080px;
         flex-direction: column;
     }
