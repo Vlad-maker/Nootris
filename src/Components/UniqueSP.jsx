@@ -13,16 +13,16 @@ function UniqueSP() {
 
             <TextBlock>
                 <HeadingCaption>
-                  АКТИВИРУЙ ИММУНИТЕТ!
+                    АКТИВИРУЙ ИММУНИТЕТ!
                 </HeadingCaption>
                 <AdvertisingCaption>
-                  Всего пять секунд в день помогут укрепить иммунитет и повысить защитные силы организма
+                    Всего пять секунд в день помогут укрепить иммунитет и повысить защитные силы организма
                 </AdvertisingCaption>
                 <AdviceCaptionHeading>
-                  NOOTRIS ПОМОГАЕТ
+                    NOOTRIS ПОМОГАЕТ
                 </AdviceCaptionHeading>
                 <AdviceCaption>
-                Вашему организму во время пандемии и сезонных простуд
+                    Вашему организму во время пандемии и сезонных простуд
                 </AdviceCaption>
             </TextBlock>
 

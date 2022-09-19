@@ -50,7 +50,7 @@ function Offer() {
                 <OfferAdvertisingSideBlock>
                     <OfferAdvertisingSideImg src={virus}/>
                     <OfferAdvertisingSideCaption>
-                    Нейтрализует<><br/></><span style={{color: '#FCB500'}}>вирусы</span>
+                        Нейтрализует<><br/></><span style={{color: '#FCB500'}}>вирусы</span>
                     </OfferAdvertisingSideCaption>
                 </OfferAdvertisingSideBlock>
             </OfferAdvertisingBlock>
