@@ -53,31 +53,27 @@ const UniqueSPBlock = styled.div`
     max-height: 792px;
     display: flex;
 
+    @media (min-width: 320px) and (max-width: 539px) {
+        flex-direction: column;
+        max-height: 1080px;
+    }
+
     @media (min-width: 320px) and (max-width: 374px) {
         max-width: 374px;
-        min-height: 323px;
-        max-height: 1080px;
-        flex-direction: column;
     }
 
     @media (min-width: 375px) and (max-width: 424px) {
         max-width: 424px;
         min-height: 755px;
-        max-height: 1080px;
-        flex-direction: column;
     }
 
     @media (min-width: 425px) and (max-width: 539px) {
         max-width: 539px;
-        min-height: 323px;
-        max-height: 1080px;
-        flex-direction: column;
     }
 
     @media (min-width: 540px) and (max-width: 767px) {
         max-width: 767px;
-        max-height: 323px;
-        min-height: 323px;
+        height: 323px;
     }
 
     @media (min-width: 768px) and (max-width: 1023px) {
@@ -205,14 +201,7 @@ const AdvertisingCaption = styled.p`
     color: #000;
     max-width: 652px;
 
-    @media (min-width: 320px) and (max-width: 374px) {
-        text-align: center;
-        font-size: 16px;
-        line-height: 18px;
-        margin: 16px 0 0 0;
-    }
-
-    @media (min-width: 375px) and (max-width: 424px) {
+    @media (min-width: 320px) and (max-width: 424px) {
         text-align: center;
         font-size: 16px;
         line-height: 18px;
@@ -313,20 +302,22 @@ const AdviceCaption = styled.p`
     color: #000;
     max-width: 350px;
 
-    @media (min-width: 320px) and (max-width: 374px) {
+    @media (min-width: 320px) and (max-width: 424px) {
         text-align: center;
         font-size: 16px;
         line-height: 18px;
+    }
+
+    @media (min-width: 320px) and (max-width: 767px) {
+        margin-top: 10px;
+    }
+
+    @media (min-width: 320px) and (max-width: 374px) {
         max-width: 320px;
-        margin: 10px 0 0 0;
     }
 
     @media (min-width: 375px) and (max-width: 424px) {
-        text-align: center;
-        font-size: 16px;
-        line-height: 18px;
         max-width: 370px;
-        margin: 10px 0 0 0;
     }
 
     @media (min-width: 425px) and (max-width: 539px) {
@@ -334,14 +325,12 @@ const AdviceCaption = styled.p`
         font-size: 18px;
         line-height: 20px;
         max-width: 420px;
-        margin: 10px 0 0 0;
     }
 
     @media (min-width: 540px) and (max-width: 767px) {
         font-size: 12px;
         line-height: 16px;
         max-width: 235px;
-        margin: 10px 0 0 0;
     }
 
     @media (min-width: 768px) and (max-width: 1023px) {
@@ -377,6 +366,18 @@ const ImageBlock = styled.div`
 
     @media (min-width: 540px) and (max-width: 767px) {
         min-height: 200px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+        min-height: 495px;
+    }
+
+    @media (min-width: 1024px) and (max-width: 1199px) {
+        min-height: 635px;
+    }
+
+    @media (min-width: 1200px) and (max-width: 1300px) {
+        min-height: 720px;
     }
 `
 

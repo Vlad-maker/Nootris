@@ -7,16 +7,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
   color: #fff;
+  background-color: #111;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-/* div, h1, h2, h3, h4, p ,li, ul, img, section, article, main, header, nav, button { 
-    outline-width: 1px; 
-    outline-style: solid; 
-    outline-color: rgb(33, 216, 9); 
-} */

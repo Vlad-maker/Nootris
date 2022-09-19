@@ -13,43 +13,44 @@ const toggleMenu = ({ isOpen }) => {
       : menuWrap.setAttribute("aria-hidden", true);
   };
 
-function clicked() {
+function goToBasket() {
     console.log('clicked')
 }
 
 function Header() {
   return (
     <HeaderBackground>
-    <HeaderBlock>
-        <HeaderLogo src={logo}/>
-        
-        <HeaderNav>
-            <HeaderNavLink>FAQ</HeaderNavLink>
-            <HeaderNavLink>Оплата и доставка</HeaderNavLink>
-            <HeaderNavLink>Возврат</HeaderNavLink>
-            <HeaderNavLink>Исследования</HeaderNavLink>
-            <HeaderNavLink>Личный кабинет</HeaderNavLink>
-            <HeaderNavLink>8 8 (800) 600-09-90</HeaderNavLink>
-        </HeaderNav>
+        <HeaderBlock>
+            
+            <HeaderLogo src={logo}/>
+            
+            <HeaderNav>
+                <HeaderNavLink>FAQ</HeaderNavLink>
+                <HeaderNavLink>Оплата и доставка</HeaderNavLink>
+                <HeaderNavLink>Возврат</HeaderNavLink>
+                <HeaderNavLink>Исследования</HeaderNavLink>
+                <HeaderNavLink>Личный кабинет</HeaderNavLink>
+                <HeaderNavLink>8 8 (800) 600-09-90</HeaderNavLink>
+            </HeaderNav>
 
-        <BasketBtn type='button' onClick={clicked}>
-            <BasketIcon src={basket}/>
-        </BasketBtn>
+            <BasketBtn type='button' onClick={goToBasket}>
+                <BasketIcon src={basket}/>
+            </BasketBtn>
 
-        <BMmenuWrapper>
-            <Menu right noOverlay disableOverlayClick onStateChange={toggleMenu}>
-                <HeaderNavBMmenu>
-                    <HeaderNavLink>FAQ</HeaderNavLink>
-                    <HeaderNavLink>Оплата и доставка</HeaderNavLink>
-                    <HeaderNavLink>Возврат</HeaderNavLink>
-                    <HeaderNavLink>Исследования</HeaderNavLink>
-                    <HeaderNavLink>Личный кабинет</HeaderNavLink>
-                    <HeaderNavLink>8 8 (800) 600-09-90</HeaderNavLink>
-                </HeaderNavBMmenu>
-            </Menu>
-        </BMmenuWrapper>
+            <BMmenuWrapper>
+                <Menu right noOverlay disableOverlayClick onStateChange={toggleMenu}>
+                    <HeaderNavBMmenu>
+                        <HeaderNavLink>FAQ</HeaderNavLink>
+                        <HeaderNavLink>Оплата и доставка</HeaderNavLink>
+                        <HeaderNavLink>Возврат</HeaderNavLink>
+                        <HeaderNavLink>Исследования</HeaderNavLink>
+                        <HeaderNavLink>Личный кабинет</HeaderNavLink>
+                        <HeaderNavLink>8 8 (800) 600-09-90</HeaderNavLink>
+                    </HeaderNavBMmenu>
+                </Menu>
+            </BMmenuWrapper>
 
-    </HeaderBlock>
+        </HeaderBlock>
     </HeaderBackground>
   )
 }
@@ -74,19 +75,6 @@ const HeaderBlock = styled.div`
     height: 80px;
     box-sizing: border-box;
     background-color: #111111;
-
-    @media (max-width: 375px) {
-    }
-
-    @media (min-width: 376px) and (max-width: 428px) {
-    }
-
-    @media (min-width: 429px) and (max-width: 800px) {
-    }
-
-    @media (min-width: 801px) and (max-width: 1366px) {
-
-    }
 `
 
 const HeaderLogo = styled.img`
@@ -109,7 +97,6 @@ const HeaderNav = styled.nav`
     width: 100%;
     height: 32px;
     margin-left: 28px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -125,6 +112,7 @@ const HeaderNav = styled.nav`
     @media (min-width: 1200px) and (max-width: 1270px) {
         max-width: 880px;
     }
+
     @media (min-width: 1271px) and (max-width: 1365px) {
         max-width: 900px;
     }
@@ -177,6 +165,7 @@ const BasketIcon = styled.img`
 `
 
 const BMmenuWrapper = styled.div`
+    border: none;
     @media (min-width: 1024px) {
         display: none;
     }
@@ -186,7 +175,6 @@ const HeaderNavBMmenu = styled.nav`
     max-width: 260px;
     width: 100%;
     margin: 10px 0 0 0;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;

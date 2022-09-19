@@ -33,7 +33,6 @@ function Offer() {
             </OfferPriceBlock>
 
             <OfferAdvertisingBlock>
-
                 <OfferAdvertisingSideBlock>
                     <OfferAdvertisingSideImg src={ginger}/>
                     <OfferAdvertisingSideCaption>
@@ -54,7 +53,6 @@ function Offer() {
                     Нейтрализует<><br/></><span style={{color: '#FCB500'}}>вирусы</span>
                     </OfferAdvertisingSideCaption>
                 </OfferAdvertisingSideBlock>
-
             </OfferAdvertisingBlock>
 
             <OfferBtn onClick={offer}>Оформить заказ!</OfferBtn>
@@ -221,35 +219,23 @@ const OfferPriceBlock = styled.div`
     display: flex;
     justify-content: space-between;
 
-    @media (min-width: 320px) and (max-width: 374px) {
+    @media (min-width: 320px) and (max-width: 539px) {
         height: 30px;
-        margin: 30px 0 0 0;
-        max-width: 145px;
-    }
-
-    @media (min-width: 375px) and (max-width: 424px) {
-        height: 30px;
-        margin: 30px 0 0 0;
-        max-width: 145px;
-    }
-
-    @media (min-width: 425px) and (max-width: 539px) {
-        height: 30px;
-        margin: 30px 0 0 0;
+        margin-top: 30px;
         max-width: 145px;
     }
 
     @media (min-width: 540px) and (max-width: 767px) {
-        margin: 25px 0 0 0;
+        margin-top: 25px;
         max-width: 166px;
     }
 
     @media (min-width: 768px) and (max-width: 911px) {
-        margin: 55px 0 0 0;
+        margin-top: 55px;
     }
 
     @media (min-width: 912px) and (max-width: 1023px) {    
-        margin: 60px 0 0 0;
+        margin-top: 60px;
     }
 `
 
@@ -263,19 +249,7 @@ const OfferPriceOld = styled.p`
     margin: 0;
     text-align: center;
 
-    @media (min-width: 320px) and (max-width: 374px) {
-        width: 56px;
-        font-size: 22px;
-        line-height: 32px;
-    }
-
-    @media (min-width: 375px) and (max-width: 424px) {
-        width: 56px;
-        font-size: 22px;
-        line-height: 32px;
-    }
-
-    @media (min-width: 425px) and (max-width: 539px) {
+    @media (min-width: 320px) and (max-width: 539px) {
         width: 56px;
         font-size: 22px;
         line-height: 32px;
@@ -298,19 +272,7 @@ const OfferPriceNew = styled.p`
     align-self:center;
     justify-self: center;
 
-    @media (min-width: 320px) and (max-width: 374px) {
-        width: 70px;
-        font-size: 28px;
-        line-height: 32px;
-    }
-
-    @media (min-width: 375px) and (max-width: 424px) {
-        width: 70px;
-        font-size: 28px;
-        line-height: 32px;
-    }
-
-    @media (min-width: 425px) and (max-width: 539px) {
+    @media (min-width: 320px) and (max-width: 539px) {
         width: 70px;
         font-size: 28px;
         line-height: 32px;
@@ -330,29 +292,26 @@ const OfferAdvertisingBlock = styled.div`
     display: flex;
     justify-content: space-between;
 
-    @media (min-width: 320px) and (max-width: 374px) {
-        margin: 30px 0 0 0;
-        max-width: 315px;
+    @media (min-width: 320px) and (max-width: 539px) {
+        margin-top: 30px;
         flex-direction: column;
-        align-items: center;  
+        align-items: center; 
+    }
+
+    @media (min-width: 320px) and (max-width: 374px) {
+        max-width: 315px;  
     }
 
     @media (min-width: 375px) and (max-width: 424px) {
-        margin: 30px 0 0 0;
-        max-width: 370px;
-        flex-direction: column;
-        align-items: center;  
+        max-width: 370px;  
     }
 
     @media (min-width: 425px) and (max-width: 539px) {
-        margin: 30px 0 0 0;
-        max-width: 420px;
-        flex-direction: column;
-        align-items: center;  
+        max-width: 420px;  
     }
 
     @media (min-width: 540px) and (max-width: 767px) {
-        margin: 10px 0 0 0;
+        margin-top: 10px;
         max-width: 492px;
         min-height: 140px;
     }
@@ -381,19 +340,9 @@ const OfferAdvertisingSideBlock = styled.div`
     flex-direction: column;
     justify-content: space-between;
 
-    @media (min-width: 320px) and (max-width: 374px) {
+    @media (min-width: 320px) and (max-width: 539px) {
         max-width: 193px;
         min-height: 225px; 
-    }
-
-    @media (min-width: 375px) and (max-width: 424px) {
-        max-width: 193px;
-        min-height: 225px;
-    }
-
-    @media (min-width: 425px) and (max-width: 539px) {
-        max-width: 193px;
-        min-height: 225px;
     }
 
     @media (min-width: 540px) and (max-width: 767px) {
@@ -526,12 +475,7 @@ const OfferAdvertisingCenterCaption = styled.p`
         line-height: 20px;
     }
 
-    @media (min-width: 768px) and (max-width: 911px) {
-        font-size: 30px;
-        line-height: 32px;
-    }
-
-    @media (min-width: 912px) and (max-width: 1023px) {
+    @media (min-width: 768px) and (max-width: 1023px) {
         font-size: 30px;
         line-height: 32px;
     }
@@ -542,12 +486,7 @@ const OfferAdvertisingCenterSpan = styled.span`
     font-size: 24px;
     line-height: 28.44px;
 
-    @media (min-width: 320px) and (max-width: 374px) {
-        font-size: 22px;
-        line-height: 22px;
-    }
-
-    @media (min-width: 425px) and (max-width: 539px) {
+    @media (min-width: 320px) and (max-width: 539px) {
         font-size: 22px;
         line-height: 22px;
     }
@@ -561,8 +500,6 @@ const OfferAdvertisingCenterSpan = styled.span`
         font-size: 22px;
         line-height: 24.44px;
     }
-
-    
 `
 
 const OfferBtn = styled.button`
@@ -585,31 +522,10 @@ const OfferBtn = styled.button`
         transform: scale(1.01)
     }
 
-    @media (min-width: 320px) and (max-width: 374px) {
+    @media (min-width: 320px) and (max-width: 767px) {
         width: 216px;
         height: 45px;
-        margin: 34px 0 0 0;
-        font-size: 16px;
-    }
-
-    @media (min-width: 375px) and (max-width: 424px) {
-        width: 216px;
-        height: 45px;
-        margin: 34px 0 0 0;
-        font-size: 16px;
-    }
-
-    @media (min-width: 425px) and (max-width: 539px) {
-        width: 216px;
-        height: 45px;
-        margin: 34px 0 0 0;
-        font-size: 16px;
-    }
-
-    @media (min-width: 540px) and (max-width: 767px) {
-        width: 216px;
-        height: 45px;
-        margin: 34px 0 0 0;
+        margin-top: 34px;
         font-size: 16px;
     }
 `
