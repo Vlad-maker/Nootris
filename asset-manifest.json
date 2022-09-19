@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Nootris/static/css/main.51e7edf9.css",
-    "main.js": "/Nootris/static/js/main.a3830373.js",
+    "main.css": "/Nootris/static/css/main.ef36a107.css",
+    "main.js": "/Nootris/static/js/main.c8cf324e.js",
     "static/js/787.14009a15.chunk.js": "/Nootris/static/js/787.14009a15.chunk.js",
     "static/media/ginger.svg": "/Nootris/static/media/ginger.ab7b122fad36cc16200e092ed3d0441f.svg",
     "static/media/lemon.svg": "/Nootris/static/media/lemon.cf5d77c16492cc07af5fdaad7ecb5bff.svg",
@@ -52,12 +52,12 @@
     "static/media/background.svg": "/Nootris/static/media/background.45534eb41a7d3b8a2f94.svg",
     "static/media/basket.svg": "/Nootris/static/media/basket.65cfd98eeca0f4e50a261e7b57eb215e.svg",
     "index.html": "/Nootris/index.html",
-    "main.51e7edf9.css.map": "/Nootris/static/css/main.51e7edf9.css.map",
-    "main.a3830373.js.map": "/Nootris/static/js/main.a3830373.js.map",
+    "main.ef36a107.css.map": "/Nootris/static/css/main.ef36a107.css.map",
+    "main.c8cf324e.js.map": "/Nootris/static/js/main.c8cf324e.js.map",
     "787.14009a15.chunk.js.map": "/Nootris/static/js/787.14009a15.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.51e7edf9.css",
-    "static/js/main.a3830373.js"
+    "static/css/main.ef36a107.css",
+    "static/js/main.c8cf324e.js"
   ]
 }
